@@ -1,15 +1,15 @@
 
 @font-face {
   font-family: 'CSP_light';
-  src: url('CynthoSlabPro-Light.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/CynthoSlabPro-Light.otf'); /* IE9 Compat Modes */
 }
 @@font-face {
   font-family: 'CSP_EL';
-  src: url('CynthoSlabPro-ExtraLight.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/CynthoSlabPro-ExtraLight.otf'); /* IE9 Compat Modes */
 }
 @@font-face {
   font-family: 'CSP_SB';
-  src: url('CynthoSlabPro-SemiBold.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/CynthoSlabPro-SemiBold.otf'); /* IE9 Compat Modes */
 }
 @font-face {
     font-family: HelveticaNeueL; /* Имя шрифта */
@@ -183,7 +183,7 @@ overflow: hidden;
 	font-size:62px;
 	text-align:center;
 	color:#fff;
-	font-family: 'CSP_EL';
+	font-family: 'CSP_light';
 	font-weight:normal;
 	margin-bottom:100px;
 }
@@ -239,7 +239,7 @@ overflow: hidden;
 	font-size:62px;
 	text-align:center;
 	color:#fff;
-	font-family: 'CSP_EL';
+	font-family: 'CSP_light';
 	font-weight:300;
 	margin-bottom: 25px;
 	
@@ -272,13 +272,13 @@ overflow: hidden;
 	font-size:62px;
 	text-align:center;
 	color:#fff;
-	font-family: 'CSP_EL';
+	font-family: 'CSP_light';
 	font-weight:300;
 	margin-bottom: 25px;
 }
 .s-link{
 	display:inline-block;
-	padding:80px 50px;
+	padding:80px 30px;
 	text-align:center;
 }
 .s-link:hover{
