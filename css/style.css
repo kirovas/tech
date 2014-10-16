@@ -51,6 +51,7 @@ input:invalid,textarea:invalid{-moz-box-shadow:0 0 5px red;-webkit-box-shadow:0 
 /* ------------------------- Generic */
 body {
     /*color:#ffffff;*/
+	
 }
 .clear {clear:both;}
 img { /* Needed for mobile */
@@ -101,6 +102,44 @@ font-size:18px;
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
 	background:transparent;
 	color:#0092ce;
+}
+.dropdown-menu{
+	background-color:#35a2d0;
+	padding:20px 60px;
+}
+.dropdown-menu>li>a{
+	color:#fff;
+	font-size:16px;
+	font-family: HelveticaNeueL;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+	color: #262626;
+text-decoration: none;
+background-color: transparent;
+}
+.navbar-nav>li>.dropdown-menu li ul{
+	list-style:initial;
+	list-style-type:square;
+}
+.navbar-nav>li>.dropdown-menu li ul li{
+	list-style:initial;
+	list-style-type:disk;
+	color:#fff;
+	padding:10px 0px;
+}
+.navbar-nav>li>.dropdown-menu li ul li a{
+	color:#fff;
+	font-size:16px;
+	font-family: HelveticaNeueL;
+	line-height:16px;
+}
+.navbar-nav>li>.dropdown-menu li h3{
+	color:#fff;
+	font-size:24px;
+	font-family: 'CSP_light';
+	display:block;
+	height:65px;
+	line-height:20px;
 }
 .slider{
 	position:relative;
@@ -291,6 +330,48 @@ overflow: hidden;
 	
 }
 .s-link a:hover{text-decoration:none;}
+.a-content{
+	margin-top:80px;
+	overflow:hidden;
+}
+.a-wrap{
+	overflow:hidden;
+	padding-top:70px;
+	padding-bottom:200px;
+	height: 715px;
+	position:relative;
+}
+.a-wrap h2{
+	text-align:center;
+	font-size:62px;
+	color:#199cd2;
+	font-family: 'CSP_light';
+	margin-bottom:100px;
+}
+.a-wrap p{
+	font-size:24px;
+	color:#010101;
+	font-family: HelveticaNeueL;
+	line-height:24px;
+}
+.a-left{
+	background:url(../images/a-wrap-bg-l.png)no-repeat left top;
+}
+.a-right{
+	background:url(../images/a-wrap-bg-r.png)no-repeat right top;
+}
+.ab-shadow{
+	background:url(../images/ab-shadow.png)no-repeat center top;
+	
+	height:80px;
+	width:100%;
+}
+.a-ligth{
+	background:url(../images/ab-light.png)no-repeat center bottom;
+	height:200px;
+	margin-top:-200px;
+	position:relative;
+}
 .bottom{
 	min-height:200px;
 	background:url(../images/a-shadow.png)no-repeat center top;
@@ -362,7 +443,7 @@ overflow: hidden;
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
- 
+ .a-left, .a-right{background:none;}
 }
 
  
@@ -371,7 +452,7 @@ and (max-width : 320px) {
 and (min-width : 321px)
 and (max-width : 480px) {
     /* Styles */
-	
+	.a-left, .a-right{background:none;}
 }
  
 /* iPads (portrait) ----------- */
@@ -379,7 +460,7 @@ and (max-width : 480px) {
 and (min-width : 481px)
 and (max-width : 768px) {
     /* Styles */
-
+.a-left, .a-right{background:none;}
  
  
 }
