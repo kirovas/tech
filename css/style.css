@@ -15,7 +15,21 @@
     font-family: HelveticaNeueL; /* Имя шрифта */
     src: url(../fonts/HelveticaNeueCyr-Light.otf); /* Путь к файлу со шрифтом */
    }
-   
+@font-face {
+    font-family: HelveticaNeueM; /* Имя шрифта */
+    src: url(../fonts/HelveticaNeueCyr-Medium.otf); /* Путь к файлу со шрифтом */
+   }
+ @font-face {
+     /* Имя шрифта */
+    src: url(../fonts/HelveticaNeueCyr-LightItalic.otf ); /* Путь к файлу со шрифтом */
+   }
+ @font-face {
+    font-family: HelveticaNeueBI; /* Имя шрифта */
+    src: url(../fonts/HelveticaNeueCyr-BoldItalic.otf ); /* Путь к файлу со шрифтом */
+   }
+
+
+ 
 html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
  
 /* Minimal base styles
@@ -429,8 +443,76 @@ overflow: hidden;
 	line-height:20px;
 	margin-bottom:25px;
 }
-
-
+.story{
+	margin-top:80px;
+	padding-top:60px;
+}
+.story-wrap{
+	margin-bottom:100px;
+}
+.story h3{
+	text-align:center;
+	font-size:62px;
+	line-height:50px;
+	color:#199cd2;
+	font-family: 'CSP_light';
+	margin-bottom:35px;
+}
+.story p{
+	font-size:18px;
+	color:#000;
+	line-height:23px;
+	font-family: HelveticaNeueL;
+	font-weight:300;
+}
+.story p strong{
+	font-family: HelveticaNeueM;
+}
+.story-right, .story-left{
+	position:relative;
+	top: -30px;
+}
+.story-right .bq{
+	position:absolute;
+	top:0px;
+	width:340px;
+}
+.story-left .bq{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	width:230px;
+}
+#netsys .bq{
+	top:20px;
+}
+#dc .bq{
+	width:230px;
+	top:20px;
+}
+#system .bq{
+	width:250px;
+}
+blockquote.style1 {
+  font-size: 16px;
+  font-family: HelveticaNeueLI;
+  font-style:italic;
+  padding: 8px;
+  margin: 5px;
+  color:#316395;
+  background-image: url(../images/bq.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 10px;
+  
+  text-align:center;
+  }
+  blockquote.style1 span {
+    	display: block;
+  	}
+blockquote.style1 strong{
+	font-family: HelveticaNeueBI;
+}
 .bottom{
 	min-height:200px;
 	background:url(../images/a-shadow.png)no-repeat center top;
