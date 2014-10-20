@@ -393,6 +393,12 @@ overflow: hidden;
 .banner-ms{
 	background:url(../images/banner-ms.jpg)no-repeat center;
 }
+.banner-pis{
+	background:url(../images/pis-banner.jpg)no-repeat center;
+}
+.banner-me{
+	background:url(../images/banner-me.jpg)no-repeat center;
+}
 .banner h1{
 	font-size:62px;
 	color:#fff;
@@ -668,6 +674,9 @@ blockquote.style1 strong{
 and (max-width : 320px) {
     /* Styles */
  .a-left, .a-right{background:none;}
+ .c-form{top:10px;position:relative;}
+ .c-wrap{height:340px;}
+ .map{padding-bottom: 0px;}
 }
 
  
@@ -677,6 +686,11 @@ and (min-width : 321px)
 and (max-width : 480px) {
     /* Styles */
 	.a-left, .a-right{background:none;}
+	 .c-form{top:10px;position:relative;}
+	 .c-wrap{height:340px;}
+	 .banner h1{font-size:32px;margin-top: 10px;}
+	 .c-info p{font-size: 18px;}
+	 .map{padding-bottom: 0px;}
 }
  
 /* iPads (portrait) ----------- */
@@ -685,7 +699,7 @@ and (min-width : 481px)
 and (max-width : 768px) {
     /* Styles */
 .a-left, .a-right{background:none;}
- 
+  .c-form{top:10px;}
  
 }
 
