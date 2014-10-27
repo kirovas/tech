@@ -3,11 +3,11 @@
   font-family: 'CSP_light';
   src: url('../fonts/CynthoSlabPro-Light.otf'); /* IE9 Compat Modes */
 }
-@@font-face {
+@font-face {
   font-family: 'CSP_EL';
   src: url('../fonts/CynthoSlabPro-ExtraLight.otf'); /* IE9 Compat Modes */
 }
-@@font-face {
+@font-face {
   font-family: 'CSP_SB';
   src: url('../fonts/CynthoSlabPro-SemiBold.otf'); /* IE9 Compat Modes */
 }
@@ -159,10 +159,13 @@ background-color: transparent;
 	position:relative;
 	margin-top:80px;
 }
+.brand-wrap {
+position: relative;
+}
 .shadow-l, .shadow-r{
 	position:absolute;
 	z-index:99;
-	width:80px;
+	width: 135px;
 	height:140px;
 	
 }
@@ -200,6 +203,9 @@ text-align:left;
 	padding-top:20px;
 	min-height:300px;
 	position:relative;
+}
+.column-inner.last{
+	background:none;
 }
 .column-inner h3{
 	font-size:24px;
@@ -583,8 +589,17 @@ blockquote.style1 strong{
 }
 .white-group{
 	background:#fff;
-	box-shadow:-5px 5px 20px rgba(0,0,0,0.3);
+	position:relative;
+	/*box-shadow:-5px 5px 20px rgba(0,0,0,0.3);*/
 	margin-bottom: 0px;
+}
+.wgs{
+	position: absolute;
+width: 100%;
+height: 100%;
+background: url(../images/textarea-shadow.png)no-repeat center bottom;
+top: 22px;
+left: -23px;
 }
 .white-group textarea{
 	width:100%;

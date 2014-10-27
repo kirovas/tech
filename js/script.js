@@ -19,4 +19,5 @@ $('.flexslider').flexslider({
     itemWidth: 170,
     itemMargin: 10
   });
+  $('.dropdown-toggle').dropdownHover();
 });

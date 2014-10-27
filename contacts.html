@@ -15,6 +15,7 @@
 <!-- Custom styles for this template -->
     <link href="css/carousel/carousel.css" rel="stylesheet">
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +45,7 @@
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="about_us.html">About us</a></li>
 				<li class="dropdown yamm-fw">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service<span class="caret"></span></a>
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Service<span class="caret"></span></a>
 				  <ul class="dropdown-menu" role="menu">
 					<li>
 						<div class="row">
@@ -143,16 +144,34 @@
 				<div class="form-group">
 					<input type="text" class="form-control" id="Number" placeholder="Number">
 				</div>
+				<div class="wgs"></div>
 				<div class="form-group white-group">
 					<textarea placeholder="Message"></textarea>
 					<button type="submit" class="btn btn-contact">Submit</button>
 				</div>
+				
 			</form>
 			<div class="contact-shadow"></div>
 		</div>	
 		</div>
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+var map;
+function initialize() {
+  var mapOptions = {
+  scrollwheel: false,
+    zoom: 10,
+    center: new google.maps.LatLng(-30.397, 150.644)
+  };
+  map = new google.maps.Map(document.getElementById('map'),
+      mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+		<div class="map" id="map">
+			
 		</div>
 	</section>
 	<section class="bottom">
@@ -187,7 +206,7 @@
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-	
+	<script src="js/bootstrap-hover-dropdown.js"></script>
 	<script src="js/script.js"></script>
   </body>
 </html>
