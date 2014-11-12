@@ -99,6 +99,7 @@ label {}
 /* ------------------------- Lists */
  
 /* ------------------------- Layout */
+.container{position:relative;}
 .navbar-default{
 	background:#c1c2c4;
 	min-height:80px;
@@ -158,6 +159,7 @@ background-color: transparent;
 .slider{
 	position:relative;
 	margin-top:80px;
+	
 }
 .brand-wrap {
 position: relative;
@@ -234,7 +236,7 @@ text-align:left;
 overflow: hidden;
 }
 .service{
-	background:url(../images/service-bg.jpg);
+	background:url(../images/service-bg.jpg)no-repeat center center;
 	padding-top:150px;
 	padding-bottom:125px;
 }

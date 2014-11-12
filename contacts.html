@@ -52,48 +52,48 @@
 							<div class="col-sm-3">
 								<h3>Managed Services</h3>
 								<ul>
-									<li><a href="#">Network Assessment</a></li>
-									<li><a href="#">Back-Up Systems</a></li>
-									<li><a href="#">Network / Server Monitoring & Maintenance</a></li>
-									<li><a href="#">IT Administration</a></li>
+									<li><a href="service_ms.html#network">Network Assessment</a></li>
+									<li><a href="service_ms.html#backup">Back-Up Systems</a></li>
+									<li><a href="service_ms.html#sm">Network / Server Monitoring & Maintenance</a></li>
+									<li><a href="service_ms.html#it">IT Administration</a></li>
 									
 								</ul>
 							</div>
 							<div class="col-sm-3">
 								<h3>Cloud Services</h3>
 								<ul>
-									<li><a href="#">Email Hosting</a></li>
-									<li><a href="#">Web Hosting</a></li>
-									<li><a href="#">Mobile Hosting</a></li>
-									<li><a href="#">Apps Hosting</a></li>
-									<li><a href="#">Amazon EC2 Instances</a></li>
-									<li><a href="#">Amazon Transcoding Services</a></li>
-									<li><a href="#">Amazon management</a></li>
+									<li><a href="service_cs.html#email">Email Hosting</a></li>
+									<li><a href="service_cs.html#wh">Web Hosting</a></li>
+									<li><a href="service_cs.html#mh">Mobile Hosting</a></li>
+									<li><a href="service_cs.html#app">Apps Hosting</a></li>
+									<li><a href="service_cs.html#ai">Amazon EC2 Instances</a></li>
+									<li><a href="service_cs.html#at">Amazon Transcoding Services</a></li>
+									<li><a href="service_cs.html#am">Amazon management</a></li>
 									
 								</ul>
 							</div>
 							<div class="col-sm-3">
 								<h3>Professional IT Support</h3>
 								<ul>
-									<li><a href="#">Audit & Review</a></li>
-									<li><a href="#">Server Virtualization</a></li>
-									<li><a href="#">Cabling & Netwotk Building</a></li>
-									<li><a href="#">Firewalls & Network Intrusions</a></li>
-									<li><a href="#">Enterprise Project Management</a></li>
-									<li><a href="#">Microsoft SharePoint</a></li>
-									<li><a href="#">Custom Apps Development</a></li>
-									<li><a href="#">Accounting package integration</a></li>
-									<li><a href="#">Data center moving</a></li>
-									<li><a href="#">Data center construction</a></li>
-									<li><a href="#">Mobile app development</a></li>
+									<li><a href="service_pis.html#ar">Audit & Review</a></li>
+						<li><a href="service_pis.html#sv">Server Virtualization</a></li>
+						<li><a href="service_pis.html#cnb">Cabling & Netwotk Building</a></li>
+						<li><a href="service_pis.html#fni">Firewalls & Network Intrusions</a></li>
+						<li><a href="service_pis.html#epm">Enterprise Project Management</a></li>
+						<li><a href="service_pis.html#msp">Microsoft SharePoint</a></li>
+						<li><a href="service_pis.html#cad">Custom Apps Development</a></li>
+						<li><a href="service_pis.html#api">Accounting package integration</a></li>
+						<li><a href="service_pis.html#dcm">Data center moving</a></li>
+						<li><a href="service_pis.html#dcc">Data center construction</a></li>
+						<li><a href="service_pis.html#mad">Mobile app development</a></li>
 								</ul>
 							</div>
 							<div class="col-sm-3">
 								<h3>Media & Entertainment</h3>
 								<ul>
-									<li><a href="#">Pre/Post Production Apps</a></li>
-									<li><a href="#">AVID WorkFlow</a></li>
-									<li><a href="#">Scheduling & Asset Management Software</a></li>
+									<li><a href="service_me.html#ppa">Pre/Post Production Apps</a></li>
+									<li><a href="service_me.html#awf">AVID WorkFlow</a></li>
+									<li><a href="service_me.html#sams">Scheduling & Asset Management Software</a></li>
 									
 								</ul>
 							</div>
@@ -157,6 +157,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 var map;
+var myLatlng = new google.maps.LatLng(-30.397, 150.644);
 function initialize() {
   var mapOptions = {
   scrollwheel: false,
@@ -165,6 +166,11 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById('map'),
       mapOptions);
+	  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title:"Hello World!"
+});
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
